@@ -96,35 +96,3 @@ Factory <|--  FactoryImpl
  +factoryMethod()  
  }
 FactoryImpl ..> ConcreteProduct : create
-
-
-```mermaid
-classDiagram
-
-AbstractFactory<|--  ConcreteFactory1
-AbstractFactory<|--  ConcreteFactory2
-
-class ConcreteFactory1{
-+createProductA()
-+createProductB()
-}
-class ConcreteFactory2{
-+createProductA()
-+createProductB()
-}
-
-class AbstractFactory{
-+createProductA()
-+createProductB()
-}
-AbstractProdutA<|--  ConcreteProductA1
-AbstractProdutA<|--  ConcreteProductA2
-
-AbstractProdutB<|--  ConcreteProductB1
-AbstractProdutB<|--  ConcreteProductB2
-
-ConcreteFactory1<|--  ConcreteProductA1
-ConcreteFactory1<|--  ConcreteProductB1
-
-ConcreteFactory2<|--  ConcreteProductA2
-ConcreteFactory2<|--  ConcreteProductB2
